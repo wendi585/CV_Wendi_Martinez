@@ -1,0 +1,198 @@
+body {
+  margin:0; /*establece el margen para los cuatro lados*/
+  color: black;/*establece un color*/
+  font-size: large; /*specifica la dimensión de la letra*/
+  font-family: 'Times New Roman', Times, serif; /*especifica el tipo de letra*/
+}
+
+/*diseño de mi fondo*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate; /* para dar la ilusión de movimiento a imágenes, dibujos u otro tipo de objetos inanimados */
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%); /*establece una o más imágenes de fondo para un elemento.*/
+  bottom:0; /*permite desplazar un elemento respecto a su posición original tomando como referencia el borde inferior del elemento.*/
+  left:-50%;/*IZQUIERDA devuelve el primer carácter o caracteres de una cadena de texto, según el número de caracteres que especifique*/
+  opacity:.5;/*define la transparencia de un elemento*/
+  position:fixed;/*define la posicion de un elemento*/
+  right:-50%;/*DERECHA devuelve el primer carácter o caracteres de una cadena de texto, según el número de caracteres que especifique*/
+  top:0;/*define el final de mi elemento*/
+  z-index:-1;/* indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+.bg2 {
+  animation-direction:alternate-reverse; /*indica si la animación debe retroceder hasta el fotograma de inicio al 
+  finalizar la secuencia o si debe comenzar desde el principio al llegar al final.*/
+  animation-duration:4s;/*indica la cantidad de tiempo que la animación tarda en completar un ciclo (duración).*/
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%); /*identifica los datos bidireccionales y los muestra correctamente en la vista, de derecha a izquierda*/
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/*le da color a los iconos*/
+a{
+    color: #0a0505;
+    text-decoration: none;
+}
+/*le da un diseño al elemento*/
+a:hover{
+    opacity: 0.5;
+}
+/*alinea las letras*/
+article{
+    padding: 0 1em;
+}
+/*crea divisiones*/
+section{
+    margin: 1 em;/*establece el margen para los cuatro lados*/
+    padding:  1em;
+}
+
+header, main, footer{
+    margin: 0 auto;/*establece el margen para los cuatro lados*/
+}
+/*crea un boton*/
+header{
+    text-align: center;
+    border-radius: 2em;
+    border-color: #065747;
+    color: #fff;
+    background-image: -webkit-linear-gradient(left, rgba(9, 127, 104, 0.6), rgba(13, 148, 121, 0.6) 5%, #086a57 5%, #15987e 10%, rgba(26, 188, 156, 0.6) 10%, rgba(25, 211, 174, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(3, 57, 46, 0.6) 30%, rgba(7, 99, 80, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(18, 99, 83, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #057d65 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #055041 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+    background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(6, 78, 63, 0.6) 5%, #0b5143 5%, #0b6c59 10%, rgba(32, 141, 119, 0.6) 10%, rgba(15, 135, 111, 0.6) 15%, #2f9c86 15%, #14725f 20%, rgba(6, 118, 95, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #157b67 25%, #0e8970 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #08745e 45%, #1abc9c 50%, rgba(11, 121, 99, 0.6) 50%, rgba(16, 131, 108, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #056350 65%, #046a56 70%, rgba(26, 188, 156, 0.6) 70%, rgba(7, 93, 76, 0.6) 75%, #0a6c59 75%, #096452 80%, rgba(26, 188, 156, 0.6) 80%, rgba(7, 110, 89, 0.6) 85%, #076c58 85%, #0c7862 90%, rgba(6, 78, 63, 0.6) 90%, rgba(8, 121, 99, 0.6) 95%, #1abc9c 95%, #046a56 100%);
+    background-position: 0 0;
+    background-size: 100%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    max-width: 10000px;
+    margin-left: auto ;/*establece el margen a la izquierda*/
+     margin-right:auto;/*establece el margen a la derecha*/
+     
+}
+/*le da el diseño(animacion)*/
+header:hover {
+    background-position: 101px;
+  }
+
+
+  header section{
+    margin: 0 auto;/*establece el margen para los cuatro lados*/
+    max-width: 640px;
+  }
+  
+  header img{
+    border-radius: 50px;
+    max-width: 150px;
+  }
+
+  h1{
+    text-transform: uppercase;
+    margin: 2em 0;/*establece el margen para los cuatro lados*/
+    font-size: 30px;
+    font-family: 'Raleway';
+  }
+/*especifica el cambio entre mayúsculas y minúsculas del texto de un elemento*/
+  h3{
+    text-transform: uppercase;
+    color: rgb(4, 68, 111);
+  }
+/*especifica el peso o grueso de la letra*/
+  h4{
+    font-weight: bold;
+    color: rgb(7, 72, 116);
+  }
+
+/*coloca el máximo ancho a un elemento*/
+  main{
+    max-width: 1140px;
+  }
+
+  main section:not(:last-child){
+    border-bottom: 1px solid rgba(220, 14, 14, 0.6);
+  }
+
+.fab{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 5px;/*establece el margen para los cuatro lados*/
+    text-align: center;
+}
+
+a .fab{
+  color: #2f1f1f;
+}
+
+.course, .skills{
+  display: -ms-flexbox;
+  display: ↂflex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.course .title{
+  color: rgb(8, 79, 126);
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.course .description{
+  -ms-flex: 0 0 66.6%;
+  flex: 00 66.6%;
+  max-width: 66.6%;
+}
+
+.course .description p{
+  padding-left: 1em;
+}
+/*ajusta la letra*/
+.skills .column{
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+/*elimina la etiquta*/
+.skills .column ul, ul.job-description{
+  list-style-type: none;
+}
+/*le coloca un etiquta, el tamaño y colo*/
+.skills .column ul > li:before{
+  content:"⩤";
+  padding-right: 0.5em;
+  color: rgb(7, 64, 102);
+}
+
+footer{
+  text-align: center;
+}
+
+.school{
+  color: rgb(113, 119, 22);
+}
+
+.job-title{
+  color:rgb(113, 119, 22) ;
+}
+
+ul{
+  content:"⩤";
+  padding-right: 0.5em;
+  color: rgb(7, 64, 102);
+}
